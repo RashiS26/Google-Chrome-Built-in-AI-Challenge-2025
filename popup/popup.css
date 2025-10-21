@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 380px;
+  margin: 0;
+  padding: 16px;
+  background: linear-gradient(135deg, #f3e7e9, #e3eeff);
+  color: #1a1a1a;
+}
+
+.container {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.container h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #0072ff;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+/* --- Input + Add Button Section --- */
+#add-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto; /* Two inputs + button */
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+#add-section input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+#add-section button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+  white-space: nowrap; /* Prevent text from breaking */
+}
+
+#add-section button:hover {
+  box-shadow: 0 0 10px rgba(0, 114, 255, 0.6);
+  transform: scale(1.05);
+}
+
+
+#list {
+  margin-top: 14px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.item {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+}
+
+.item .meta {
+  font-size: 12px;
+  color: #666;
+}
+
+.item button {
+  margin-top: 6px;
+  border: none;
+  border-radius: 8px;
+  background: #f0f0f0;
+  padding: 6px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+}
+
+.item button:hover {
+  background: #e3eeff;
+}
+
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.controls button {
+  flex: 1;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  box-shadow: 0 0 12px rgba(0, 114, 255, 0.6);
+  transform: scale(1.05);
+}

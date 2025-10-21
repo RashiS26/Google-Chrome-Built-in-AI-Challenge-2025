@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Price Tracker Pro+</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Price Tracker Pro+</h1>
+    <div id="add-section">
+      <input id="url" placeholder="Paste product URL (or leave empty to track current tab)"/>
+      <input id="threshold" placeholder="Alert threshold (numbers only)" />
+      <button id="addBtn">Add / Track</button>
+    </div>
+    <hr/>
+    <div id="list"></div>
+    <div class="controls">
+      <button id="checkNow">Check Now</button>
+      <button id="openCompare">Compare Similar</button>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
